@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+#visualization {
+    color: black;
+    background-color: yellow;
+    height: 100vh;
+    width: 100vw;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+}
+
+#keyword {
+    font-size: 42vh;
+    font-family: Droid Sans Mono
+}
