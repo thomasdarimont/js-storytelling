@@ -1,20 +1,27 @@
 body{
     margin: 0;
     overflow: hidden;
+    background-color: plum;
 }
 
 #visualization {
-    color: black;
-    background-color: yellow;
+    color: white;
+    background-color: plum;
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
+
     display: flex;   
     align-items: center;
     justify-content: center;
 }
 
+#transcript {
+    display: none;
+}
+
 #keyword {
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 26vh;
-    font-family: DejaVu Sans Mono
+    font-family: 'Caveat Brush', cursive;
 }

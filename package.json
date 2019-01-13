@@ -1,5 +1,6 @@
 {
   "devDependencies": {},
   "dependencies": {
+    "color-harmony": "^0.3.0"
   }
 }

@@ -649,16 +649,16 @@ class Mappings {
       // entry.Valence
       // entry.Word
 
-      let key = entry.Word;
-      this.wordIndex[key] = entry;
+      let wordKey = entry.Word;
+      this.wordIndex[wordKey] = entry;
 
-      let germanKey = entry.German_de === "NO TRANSLATION" ? entry.Word : entry.German_de;
-      germanKey = germanKey.toLowerCase();
-      if (germanKey in this.germanStopWords) {
+      let germanWordKey = entry.German_de === "NO TRANSLATION" ? entry.Word : entry.German_de;
+      germanWordKey = germanWordKey.toLowerCase();
+      if (this.germanStopWords.includes(germanWordKey)) {
         console.log("skipping stop words...");
         continue;
       }
-      this.germanWordIndex[germanKey] = entry;
+      this.germanWordIndex[germanWordKey] = entry;
     }
 
     console.log("loading senslevel");
@@ -686,8 +686,10 @@ class Mappings {
     let wordInfo = this.germanWordIndex[word];
     return wordInfo;
   }
+
+  isStopWord(word) {
+      return this.germanStopWords.includes(word);
+  }
 }
 
-const mappings = new Mappings();
-mappings.load();
-window.mappings = mappings;
+window.Mappings = Mappings;

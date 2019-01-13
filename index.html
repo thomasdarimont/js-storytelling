@@ -5,18 +5,23 @@
     <title>WordViz</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-  <div class="controls">
+  <div id="controls">
     <button id="btn_start">Start</button>
     <button id="btn_stop">Stop</button>
+    <button id="btn_restart">Restart</button>
   </div>
 
   <div id="visualization">
-      <div id="keyword">Visual Story Telling<div>
+    <div id="transcript">...</div>
+    <div id="keyword">Visual Story Telling<div>
   </div>
 
+  <script src="./code/recog.js" defer></script>
+  <script src="./code/visualizer.js" defer></script>
   <script src="./code/color.js" defer></script>
   <script src="./code/mappings.js" defer></script>
   <script src="./code/index.js" defer></script>
