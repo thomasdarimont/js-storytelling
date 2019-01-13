@@ -1,4 +1,4 @@
-const mappings = new Mappings();
+const mappings = new WordMappings();
 mappings.load();
 
 const recog = new SpeechRecog({

@@ -1,7 +1,7 @@
 const lexicon = require("../data/mappings/German-de-NRC-VAD-Lexicon.json");
 const senslevel = require("../data/mappings/NRC-color-lexicon-senselevel-v0.92.json");
 
-class Mappings {
+class WordMappings {
   constructor() {
     this.lexicon = lexicon;
     this.senslevel = senslevel;
@@ -692,4 +692,4 @@ class Mappings {
   }
 }
 
-window.Mappings = Mappings;
+window.WordMappings = WordMappings;
