@@ -58,13 +58,25 @@ class SpeechRecog {
         
         if(!event.results[i].isFinal){
           let text = event.results[i][0].transcript;
-          //console.log(text);
           let keyword = document.getElementById("keyword");
           let word = text.split(" ").pop();
           let fontSize = 48 / Math.exp(word.length/8);
           console.log(word, fontSize);
-          keyword.innerText = word;
+
+          let normalizedWord = this.normalize(word);
+
+          let wordInfo = window.mappings.lookup(normalizedWord);
+          if (!wordInfo) {
+            continue;
+          }
+
+          console.log(normalizedWord, wordInfo);
+
+          let fontColor = wordInfo.Colour === "None" ? "black" : wordInfo.Colour;
+
+          keyword.innerText = normalizedWord;
           keyword.style.fontSize = fontSize + "vh";
+          keyword.style.color = fontColor;
         }
       }
 
@@ -77,6 +89,14 @@ class SpeechRecog {
     };
 
     return recognition;
+  }
+
+  normalize(input) {
+
+    let output = input;
+    output = output.toLowerCase();
+
+    return output;
   }
 
   start() {

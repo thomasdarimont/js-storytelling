@@ -5,7 +5,7 @@ body{
 
 #visualization {
     color: black;
-    background-color: yellow;
+    background-color: white;
     height: 100vh;
     width: 100vw;
     display: flex;   
@@ -14,6 +14,7 @@ body{
 }
 
 #keyword {
+    text-transform: capitalize;
     font-size: 42vh;
     font-family: Droid Sans Mono
 }

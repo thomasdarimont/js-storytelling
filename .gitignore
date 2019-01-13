@@ -3,6 +3,7 @@
 # Edit at https://www.gitignore.io/?templates=osx,node,windows,sublimetext,intellij+all,visualstudiocode
 
 dist/
+data/NRC-*
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
