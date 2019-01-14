@@ -1,6 +1,9 @@
 # Visualize Spoken Text
 
-This toy project demonstrates the use of Google Chrome's `webkitSpeechRecognition` API.  
+This toy project demonstrates the use of Google Chrome's `webkitSpeechRecognition` API.
+
+The idea was to create a visual experience similar to the [CultureHubNode](https://github.com/mncmncmnc/CultureHubNode)
+project.
 
 ## Running the example
 
