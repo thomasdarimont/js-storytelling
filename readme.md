@@ -1,9 +1,9 @@
 # Visualize Spoken Text
 
-This toy project demonstrates the use of Google Chrome's `webkitSpeechRecognition` API.
-
 The idea was to create a visual experience similar to the [CultureHubNode](https://github.com/mncmncmnc/CultureHubNode)
 project.
+
+This WIP toy project demonstrates the use of Google Chrome's `webkitSpeechRecognition` API.
 
 ## Running the example
 
@@ -18,3 +18,7 @@ Then browse to `http://localhost:1234`
 
 To start the visualization click `start` and speak into your microphone.
 
+# Next steps
+
+- Integrate the [NCR Sentiment and Emotion Lexicons](http://sentiment.nrc.ca/lexicons-for-research/) for emotion aware visualizations.
+- Implement some visualizations like those from the [CultureHubNode](https://github.com/mncmncmnc/CultureHubNode) project.
