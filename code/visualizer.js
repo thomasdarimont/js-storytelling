@@ -23,10 +23,11 @@ class Visualizer {
   }
 
   onNewTranscript(transcript, intermediate) {
+    
     if (intermediate) {
+      console.log(transcript);
       return;
     }
-
     this.transcript.innerText += transcript;
   }
 

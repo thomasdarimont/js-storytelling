@@ -1,14 +1,13 @@
 body{
     margin: 0;
     overflow: hidden;
+    color: black;
     background-color: yellow;
 }
 
 #visualization {
-    color: black;
-    background-color: yellow;
     flex-direction: column;
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
 
     display: flex;   
@@ -17,7 +16,8 @@ body{
 }
 
 #transcript {
-    display: none;
+    /* display: none; */
+    font-size: 4vh;
 }
 
 #keyword {
